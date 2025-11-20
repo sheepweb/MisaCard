@@ -17,12 +17,14 @@ export async function GET(
 
     // 转发请求到真实的 mujicard.com API
     const response = await fetch(
-      `https://mujicard.com/api/card/${card_id}`,
+      `https://api.misacard.com/api/card/${card_id}`,
       {
         method: 'GET',
         headers: {
           'accept': 'application/json, text/plain, */*',
-          'Referer': 'https://mujicard.com/activate',
+          'authorization': 'Bearer nuceeDqN@UHDHWcpxTcMzj$pDDPrQSd^Q6EY^@$xqNZyRntxu1bmr2qGnJKuFf%&',
+          'origin': 'https://misacard.com',
+          'referer': 'https://misacard.com/',
         },
       }
     );
