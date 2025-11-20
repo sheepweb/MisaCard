@@ -18,12 +18,14 @@ export async function POST(
 
     // Forward activation request to mujicard.com API
     const response = await fetch(
-      `https://mujicard.com/api/card/activate/${card_id}`,
+      `https://api.misacard.com/api/card/activate/${card_id}`,
       {
         method: 'POST',
         headers: {
           'accept': 'application/json, text/plain, */*',
-          'Referer': 'https://mujicard.com/activate',
+          'authorization': 'Bearer nuceeDqN@UHDHWcpxTcMzj$pDDPrQSd^Q6EY^@$xqNZyRntxu1bmr2qGnJKuFf%&',
+          'origin': 'https://misacard.com',
+          'referer': 'https://misacard.com/',
           'Content-Type': 'application/json',
         },
       }
